@@ -77,6 +77,16 @@ chsh -s $(which zsh)
 ```
 *(Tutup terminal WSL dan buka kembali untuk melihat Zsh shell).*
 
+### Alternatif: Menggunakan Git Bash (Tanpa WSL)
+Jika Anda menggunakan Git Bash dan tidak ingin menggunakan WSL, Anda dapat menginstal Zsh secara manual melalui MSYS2:
+
+1. Kunjungi halaman paket MSYS2 untuk Zsh: [https://packages.msys2.org/packages/zsh?repo=msys&variant=x86_64](https://packages.msys2.org/packages/zsh?repo=msys&variant=x86_64)
+2. Download file paket Zsh (berekstensi `.zst`). Link download langsung (contoh versi 5.9-5):
+   [https://mirror.msys2.org/msys/x86_64/zsh-5.9-5-x86_64.pkg.tar.zst](https://mirror.msys2.org/msys/x86_64/zsh-5.9-5-x86_64.pkg.tar.zst)
+3. Ekstrak file `.zst` yang telah didownload menggunakan aplikasi seperti [PeaZip](https://peazip.github.io/) atau menggunakan `tar` jika tersedia.
+4. Salin hasil ekstraksi (biasanya berupa folder `etc` dan `usr`) dan *paste* ke dalam root folder instalasi Git Bash Anda (secara default berada di `C:\Program Files\Git`). Izinkan penggabungan folder (*merge*) jika diminta.
+5. Buka kembali Git Bash Anda, dan ketik perintah `zsh` untuk memulai Zsh. Setelah berhasil masuk ke Zsh, Anda bisa lanjut ke tahap Instalasi Oh My Zsh.
+
 ---
 
 ## 4. Instalasi Oh My Zsh
